@@ -32,7 +32,14 @@ var apm = require('elastic-apm-node').start({
 })
 ```
 
-Run the application by running in your console `node main.js`
+Run the prerequisites in your console. You will need to add the APM Node agent dependency, along with the elasticsearch NodeJS client to call the health API:
+
+```
+sudo npm install elastic-apm-node --save
+sudo npm install @elastic/elasticsearch
+```
+
+Then, just run the application by running in your console `node main.js`
 
 ## Go back to Kibana and check the traces
 
