@@ -4,23 +4,23 @@ var apm = require('elastic-apm-node').start({
   serviceName: '',
 
   // Use if APM Server requires a token
-  secretToken: 'rwxXuX892i0TmTp67c',
+  secretToken: 'xxxxxx',
 
   // Set custom APM Server URL (default: http://localhost:8200)
-  serverUrl: 'https://81c3189ed4cf4ce097c211b4c91fed02.apm.us-east-1.aws.cloud.es.io:443'
+  serverUrl: 'https://xxxxx.apm.us-east-1.aws.cloud.es.io:xxxxx'
 })
 
 var http = require("http");
 const { Client } = require('@elastic/elasticsearch');
 
 const client = new Client({
-  node: 'https://1bedcadd6c974e3f963b464dadeb3ab8.us-east-1.aws.found.io:9243',
+  node: 'https://xxxxx.us-east-1.aws.found.io:xxxxx',
   maxRetries: 5,
   requestTimeout: 60000,
   sniffOnStart: false,
   auth: {
   	username: 'elastic',
-  	password: '0I1BIbjNeK8FI2UxVg3h2b5O'
+  	password: 'xxxxxxx'
   }
 });
 
