@@ -1,2 +1,3 @@
-# apm_gettingstarted
-Getting Started with APM
+# Getting started with Elastic APM
+
+## First, create your Elastic Cloud Cluster 
